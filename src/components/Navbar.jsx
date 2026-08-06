@@ -7,24 +7,10 @@ function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [active, setActive] = useState("home");
 
-  const closeMenu = () => {
-    setMenuOpen(false);
-  };
-
-  // Navbar Shadow on Scroll
-  useEffect(() => {
-    const handleNavbar = () => {
-      setScrolled(window.scrollY > 50);
-    };
-
-    window.addEventListener("scroll", handleNavbar);
-
-    return () => window.removeEventListener("scroll", handleNavbar);
-  }, []);
-
-  // Active Menu Highlight
   useEffect(() => {
     const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+
       const sections = document.querySelectorAll("section");
 
       sections.forEach((section) => {
@@ -46,20 +32,31 @@ function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
   return (
     <>
       <nav className={scrolled ? "navbar scrolled" : "navbar"}>
 
-        <div className="logo">
+        {/* Logo */}
 
-          <img src={logo} alt="Hole Construction Logo" />
+        <a href="#home" className="logo">
+
+          <img
+            src={logo}
+            alt="Hole Construction"
+            className="logo-img"
+          />
 
           <div className="logo-text">
             <h2>Hole Construction</h2>
-            <span>Core Cutting • Demolition</span>
           </div>
 
-        </div>
+        </a>
+
+        {/* Mobile Menu */}
 
         <div
           className="menu-icon"
@@ -67,6 +64,8 @@ function Navbar() {
         >
           {menuOpen ? <FaTimes /> : <FaBars />}
         </div>
+
+        {/* Navigation */}
 
         <ul className={menuOpen ? "nav-links active" : "nav-links"}>
 
