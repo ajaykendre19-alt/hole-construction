@@ -1157,3 +1157,515 @@ justify-content:center;
 }
 
 }
+/*==================================
+        FINAL PREMIUM POLISH
+==================================*/
+
+/* Smooth Animation */
+
+section{
+
+    animation:fadeUp .8s ease;
+
+}
+
+@keyframes fadeUp{
+
+0%{
+
+opacity:0;
+transform:translateY(40px);
+
+}
+
+100%{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+}
+
+
+/* Smooth Card Hover */
+
+.service-card,
+.about-card,
+.review-card,
+.gallery-card,
+.contact-card{
+
+transition:.35s ease;
+
+}
+
+.service-card:hover,
+.about-card:hover,
+.review-card:hover,
+.gallery-card:hover,
+.contact-card:hover{
+
+transform:translateY(-12px);
+
+}
+
+
+/* Image Radius */
+
+.hero img,
+.gallery img{
+
+border-radius:18px;
+
+}
+
+
+/* Better Section Gap */
+
+.hero,
+.about,
+.services,
+.gallery,
+.reviews,
+.cta,
+.contact,
+.quote,
+.footer{
+
+padding-top:90px;
+padding-bottom:90px;
+
+}
+
+
+/* Premium Shadow */
+
+.hero-right img,
+.gallery-card,
+.review-card,
+.contact-card,
+.about-card{
+
+box-shadow:0 15px 40px rgba(0,0,0,.12);
+
+}
+
+
+/* Scrollbar */
+
+::-webkit-scrollbar{
+
+width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+background:#eee;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:#ffb400;
+border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+background:#111;
+
+}
+
+
+/* Selection */
+
+::selection{
+
+background:#ffb400;
+color:#111;
+
+}
+
+
+/* Links */
+
+a{
+
+transition:.3s;
+
+}
+
+
+/* Buttons */
+
+button{
+
+transition:.35s;
+
+}
+
+button:hover{
+
+transform:translateY(-2px);
+
+}
+
+
+/* Hero */
+
+.hero h1{
+
+font-size:58px;
+
+font-weight:800;
+
+line-height:1.2;
+
+}
+
+
+/* Section Heading */
+
+.section-title{
+
+font-size:48px;
+
+font-weight:800;
+
+margin-bottom:20px;
+
+}
+
+.section-text{
+
+font-size:18px;
+
+line-height:1.9;
+
+}
+
+
+/* Footer */
+
+.footer{
+
+margin-top:0;
+
+}
+
+
+/* Mobile */
+
+@media(max-width:991px){
+
+.hero{
+
+text-align:center;
+
+}
+
+.hero-buttons{
+
+justify-content:center;
+
+}
+
+.section-title{
+
+font-size:34px;
+
+}
+
+.hero h1{
+
+font-size:40px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+section{
+
+padding:70px 20px;
+
+}
+
+.hero h1{
+
+font-size:34px;
+
+}
+
+.section-title{
+
+font-size:30px;
+
+}
+
+.section-text{
+
+font-size:16px;
+
+}
+
+.hero-buttons{
+
+flex-direction:column;
+
+align-items:center;
+
+}
+
+.btn{
+
+width:100%;
+
+max-width:280px;
+
+text-align:center;
+
+}
+
+.whatsapp-button{
+
+width:56px;
+height:56px;
+right:18px;
+bottom:18px;
+
+}
+
+.scroll-top{
+
+right:18px;
+bottom:88px;
+
+}
+
+}
+
+/*==================================
+        GALLERY FONT FIX
+==================================*/
+
+.gallery{
+
+font-family:'Poppins',sans-serif;
+
+text-align:center;
+
+}
+
+.gallery .section-title{
+
+font-size:46px;
+
+font-weight:800;
+
+color:#222;
+
+margin-bottom:18px;
+
+}
+
+.gallery .section-text{
+
+font-size:18px;
+
+line-height:1.8;
+
+color:#666;
+
+max-width:760px;
+
+margin:auto;
+
+margin-bottom:55px;
+
+}
+
+.gallery-card{
+
+background:#fff;
+
+border-radius:18px;
+
+overflow:hidden;
+
+box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+}
+
+.gallery-info{
+
+padding:22px;
+
+}
+
+.gallery-info h3{
+
+font-size:22px;
+
+font-weight:700;
+
+color:#111;
+
+margin-bottom:10px;
+
+line-height:1.4;
+
+}
+
+.gallery-info p{
+
+font-size:16px;
+
+color:#666;
+
+line-height:1.8;
+
+font-weight:400;
+
+}
+
+
+/*==================================
+      MOBILE FIX
+==================================*/
+
+@media(max-width:768px){
+
+.whatsapp-button{
+
+width:56px;
+
+height:56px;
+
+right:15px;
+
+bottom:15px;
+
+}
+
+.scroll-top{
+
+width:50px;
+
+height:50px;
+
+right:15px;
+
+bottom:82px;
+
+}
+
+.gallery .section-title{
+
+font-size:32px;
+
+}
+
+.gallery-info h3{
+
+font-size:20px;
+
+}
+
+.gallery-info p{
+
+font-size:15px;
+
+}
+
+}
+/*==================================
+      WHATSAPP BUTTON
+==================================*/
+
+.whatsapp-btn{
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 60px;
+  height: 60px;
+  background: #25D366;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 32px;
+  line-height: 1;
+  box-shadow: 0 10px 25px rgba(0,0,0,.25);
+  z-index: 9999;
+  transition: all .3s ease;
+}
+
+.whatsapp-btn:hover{
+  transform: scale(1.1);
+  background: #1ebe5d;
+}
+
+.whatsapp-btn svg{
+  width: 32px;
+  height: 32px;
+  display: block;
+}
+
+/*==================================
+      SCROLL TO TOP
+==================================*/
+
+.scroll-top{
+  position: fixed;
+  right: 20px;
+  bottom: 95px;
+  width: 55px;
+  height: 55px;
+  border: none;
+  background: #ffb400;
+  color: #111;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  cursor: pointer;
+  box-shadow: 0 12px 30px rgba(0,0,0,.25);
+  z-index: 9998;
+  transition: .35s;
+}
+
+.scroll-top:hover{
+  background: #111;
+  color: #fff;
+  transform: translateY(-5px);
+}
+
+/*==================================
+      MOBILE
+==================================*/
+
+@media (max-width:768px){
+
+  .whatsapp-btn{
+    right:15px;
+    bottom:15px;
+    width:55px;
+    height:55px;
+  }
+
+  .scroll-top{
+    right:15px;
+    bottom:82px;
+    width:50px;
+    height:50px;
+  }
+
+}
