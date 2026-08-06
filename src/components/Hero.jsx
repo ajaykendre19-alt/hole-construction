@@ -4,9 +4,9 @@ function Hero() {
   return (
     <section className="hero" id="home">
 
-      <div className="hero-content">
+      <div className="hero-left">
 
-        <span className="hero-tag">
+        <span className="hero-badge">
           Professional Concrete Cutting Services
         </span>
 
@@ -16,9 +16,10 @@ function Hero() {
 
         <p>
           We provide professional Core Cutting, Wall Cutting,
-          Concrete Cutting, RCC Cutting, Hole Drilling and
-          Demolition Services with modern equipment,
-          experienced technicians and quality workmanship.
+          Concrete Cutting, Slab Cutting, RCC Demolition,
+          Chemical Bolt Fixing and Machine Foundation services
+          with modern equipment, experienced technicians and
+          quality workmanship.
         </p>
 
         <div className="hero-buttons">
@@ -28,7 +29,7 @@ function Hero() {
           </a>
 
           <a
-            href="tel:8459688256"
+            href="tel:+918459688256"
             className="btn btn-dark"
           >
             Call Now
@@ -38,11 +39,11 @@ function Hero() {
 
       </div>
 
-      <div className="hero-image">
+      <div className="hero-right">
 
         <img
           src={hero}
-          alt="Hole Construction"
+          alt="Core Cutting Services"
         />
 
       </div>

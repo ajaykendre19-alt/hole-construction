@@ -26,25 +26,25 @@ function Services() {
     {
       icon: <FaIndustry />,
       title: "RCC Demolition",
-      desc: "Safe demolition of RCC structures using modern equipment with minimum vibration."
+      desc: "Safe RCC demolition using modern machines with minimum vibration and maximum safety."
     },
 
     {
       icon: <FaTools />,
       title: "Slab Cutting",
-      desc: "Clean slab cutting for residential, commercial and industrial construction projects."
+      desc: "Clean and accurate slab cutting for residential, commercial and industrial projects."
     },
 
     {
       icon: <FaBolt />,
       title: "Chemical Bolt Fixing",
-      desc: "Heavy-duty chemical anchor bolt fixing for machines and structural applications."
+      desc: "Heavy-duty chemical anchor bolt fixing with high strength and durability."
     },
 
     {
       icon: <FaDraftingCompass />,
       title: "Machine Foundation",
-      desc: "Precision machine foundation work with proper alignment and durable finishing."
+      desc: "Precision machine foundation work with proper alignment and quality finishing."
     }
 
   ];
@@ -58,19 +58,18 @@ function Services() {
       </span>
 
       <h2 className="section-title">
-        Professional Concrete Cutting & Demolition Services
+        Professional Concrete Cutting & RCC Demolition Services
       </h2>
 
       <p className="section-text">
-        We provide reliable concrete cutting, wall cutting,
-        slab cutting, demolition and industrial construction
-        solutions using advanced machines and experienced
-        professionals.
+        We provide advanced concrete cutting and demolition
+        solutions with modern equipment, experienced technicians
+        and timely project completion.
       </p>
 
       <div className="service-grid">
 
-        {services.map((service, index) => (
+        {services.map((service,index)=>(
 
           <div className="service-card" key={index}>
 

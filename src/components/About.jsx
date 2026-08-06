@@ -1,44 +1,87 @@
+import {
+  FaCheckCircle,
+  FaHardHat,
+  FaAward,
+  FaUsers,
+} from "react-icons/fa";
+
 function About() {
   return (
     <section className="about" id="about">
 
-      <div className="container">
+      <div className="about-left">
 
-        <span className="section-tag">ABOUT US</span>
+        <span className="section-tag">
+          ABOUT US
+        </span>
 
-        <h2 className="section-title">
-          Trusted Concrete Cutting & Demolition Experts
+        <h2>
+          Trusted Core Cutting & RCC Demolition Experts
         </h2>
 
-        <p className="section-text">
-          Hole Construction is a trusted service provider based in Kalewadi,
-          Pune. Under the leadership of <strong>Sushan Vyankat Hole</strong>,
-          we specialize in Core Cutting, Wall Cutting, Concrete Cutting,
-          RCC Demolition, Slab Cutting, Groove Cutting, Rebaring and Machine
-          Foundation Work using modern equipment and skilled professionals.
+        <p>
+          Hole Construction is a trusted construction service
+          provider based in Pune. We specialize in Core Cutting,
+          Wall Cutting, Slab Cutting, RCC Demolition, Chemical
+          Bolt Fixing and Machine Foundation work using modern
+          equipment and experienced professionals.
         </p>
 
-        <div className="about-grid">
+        <div className="about-list">
 
-          <div className="about-card">
-            <h3>100+</h3>
-            <p>Projects Completed</p>
+          <div>
+            <FaCheckCircle />
+            Professional Team
           </div>
 
-          <div className="about-card">
-            <h3>100%</h3>
-            <p>Quality Work</p>
+          <div>
+            <FaCheckCircle />
+            Latest Equipment
           </div>
 
-          <div className="about-card">
-            <h3>24×7</h3>
-            <p>Customer Support</p>
+          <div>
+            <FaCheckCircle />
+            On-Time Project Completion
           </div>
 
-          <div className="about-card">
-            <h3>5+</h3>
-            <p>Years Experience</p>
+          <div>
+            <FaCheckCircle />
+            100% Customer Satisfaction
           </div>
+
+        </div>
+
+      </div>
+
+      <div className="about-right">
+
+        <div className="about-card">
+
+          <FaHardHat />
+
+          <h3>100+</h3>
+
+          <p>Projects Completed</p>
+
+        </div>
+
+        <div className="about-card">
+
+          <FaAward />
+
+          <h3>5+</h3>
+
+          <p>Years Experience</p>
+
+        </div>
+
+        <div className="about-card">
+
+          <FaUsers />
+
+          <h3>500+</h3>
+
+          <p>Happy Clients</p>
 
         </div>
 

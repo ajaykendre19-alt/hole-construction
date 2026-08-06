@@ -1,82 +1,46 @@
-import { useState } from "react";
-
 function ContactForm() {
 
-  const [submitted, setSubmitted] = useState(false);
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
-    const form = e.target;
-
-    const response = await fetch(
-      "https://formsubmit.co/ajax/YOUR_EMAIL@gmail.com",
-      {
-        method: "POST",
-        body: new FormData(form),
-      }
-    );
-
-    if (response.ok) {
-      setSubmitted(true);
-      form.reset();
-    }
-  };
-
   return (
-    <section className="contact-form">
 
-      <h2>Request a Free Quote</h2>
+    <section className="quote" id="quote">
 
-      {submitted ? (
+      <span className="section-tag">
+        FREE QUOTE
+      </span>
 
-        <div className="success-message">
-          <h3>✅ Thank You!</h3>
-          <p>
-            Your enquiry has been submitted successfully.
-            Our team will contact you shortly.
-          </p>
-        </div>
+      <h2 className="section-title">
+        Request a Free Quote
+      </h2>
 
-      ) : (
+      <p className="section-text">
+        Tell us about your project and our team will contact you shortly.
+      </p>
 
-        <form onSubmit={handleSubmit}>
+      <form className="quote-form">
 
-          <input
-            name="name"
-            placeholder="Full Name"
-            required
-          />
+        <input type="text" placeholder="Full Name" required />
 
-          <input
-            name="phone"
-            placeholder="Mobile Number"
-            required
-          />
+        <input type="tel" placeholder="Mobile Number" required />
 
-          <select name="service">
+        <input type="email" placeholder="Email Address" />
 
-            <option>Core Cutting</option>
-            <option>Wall Cutting</option>
-            <option>RCC Demolition</option>
+        <input type="text" placeholder="Project Location" />
 
-          </select>
+        <textarea
+          rows="5"
+          placeholder="Project Details"
+        ></textarea>
 
-          <textarea
-            name="message"
-            placeholder="Project Details"
-          />
+        <button>
+          Send Enquiry
+        </button>
 
-          <button type="submit">
-            Send Enquiry
-          </button>
-
-        </form>
-
-      )}
+      </form>
 
     </section>
+
   );
+
 }
 
 export default ContactForm;

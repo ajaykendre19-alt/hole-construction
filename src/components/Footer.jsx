@@ -1,66 +1,41 @@
-import logo from "../assets/images/hole logo.png";
-import {
-  FaPhoneAlt,
-  FaMapMarkerAlt,
-  FaWhatsapp,
-  FaFacebookF,
-  FaInstagram,
-} from "react-icons/fa";
-
 function Footer() {
+
   return (
+
     <footer className="footer">
 
-      <div className="footer-logo">
+      <h2>Hole Construction</h2>
 
-        <img src={logo} alt="Hole Construction" />
+      <p>
+        Professional Core Cutting, Wall Cutting,
+        RCC Demolition and Machine Foundation Services.
+      </p>
 
-        <h2>Hole Construction</h2>
+      <div className="footer-links">
 
-        <p>
-          Professional Borewell Drilling,
-          Core Cutting, Concrete Cutting &
-          Construction Services.
-        </p>
+        <a href="#home">Home</a>
 
-      </div>
+        <a href="#about">About</a>
 
-      <div className="footer-contact">
+        <a href="#services">Services</a>
 
-        <p>
-          <FaPhoneAlt /> +91 8459688256
-        </p>
+        <a href="#gallery">Gallery</a>
 
-        <p>
-          <FaWhatsapp /> +91 8459688256
-        </p>
-
-        <p>
-          <FaMapMarkerAlt /> Pune, Maharashtra
-        </p>
+        <a href="#contact">Contact</a>
 
       </div>
-
-      <div className="footer-social">
-
-        <a href="#">
-          <FaFacebookF />
-        </a>
-
-        <a href="#">
-          <FaInstagram />
-        </a>
-
-      </div>
-
-      <hr />
 
       <p className="copyright">
-        © 2026 Hole Construction. All Rights Reserved.
+
+        © 2026 Hole Construction.
+        All Rights Reserved.
+
       </p>
 
     </footer>
+
   );
+
 }
 
 export default Footer;

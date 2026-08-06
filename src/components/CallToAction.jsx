@@ -2,27 +2,31 @@ function CallToAction() {
   return (
     <section className="cta">
 
-      <h2>Need Professional Construction Services?</h2>
+      <div className="cta-content">
 
-      <p>
-        Contact Hole Construction today for fast, reliable and professional
-        demolition, core cutting and construction work.
-      </p>
+        <h2>
+          Need Professional Core Cutting & RCC Demolition Services?
+        </h2>
 
-      <div className="hero-buttons">
+        <p>
+          Contact Hole Construction today for fast, reliable and
+          professional construction solutions across Pune.
+        </p>
 
-        <a href="tel:9359190536" className="btn">
-          📞 Call Now
-        </a>
+        <div className="cta-buttons">
 
-        <a
-          href="https://wa.me/919359190536"
-          className="btn btn-outline"
-          target="_blank"
-          rel="noreferrer"
-        >
-          💬 WhatsApp
-        </a>
+          <a href="#contact" className="btn btn-primary">
+            Get Free Quote
+          </a>
+
+          <a
+            href="tel:+918459688256"
+            className="btn btn-dark"
+          >
+            Call Now
+          </a>
+
+        </div>
 
       </div>
 
