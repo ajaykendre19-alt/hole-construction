@@ -1,17 +1,32 @@
 function Gallery() {
   return (
-    <section className="gallery" id="gallery" data-aos="zoom-in">
+    <section className="gallery" id="gallery">
 
-      <h2>Our Gallery</h2>
+      <span className="section-tag">
+        OUR PROJECTS
+      </span>
 
-      <div className="service-grid">
+      <h2 className="section-title">
+        Project Gallery
+      </h2>
 
-        <div className="service-card">Project Image 1</div>
-        <div className="service-card">Project Image 2</div>
-        <div className="service-card">Project Image 3</div>
-        <div className="service-card">Project Image 4</div>
-        <div className="service-card">Project Image 5</div>
-        <div className="service-card">Project Image 6</div>
+      <p className="section-text">
+        We are currently updating our latest project photos.
+        Please contact us to see our recent Core Cutting,
+        Wall Cutting, RCC Demolition and Construction work.
+      </p>
+
+      <div className="gallery-empty">
+
+        <h3>Project Photos Coming Soon</h3>
+
+        <p>
+          Latest project images will be available soon.
+        </p>
+
+        <a href="#contact" className="btn btn-primary">
+          Contact Us
+        </a>
 
       </div>
 

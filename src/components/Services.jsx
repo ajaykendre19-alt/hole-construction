@@ -1,69 +1,97 @@
 import {
-  FaHardHat,
   FaHammer,
   FaBuilding,
   FaTools,
   FaBolt,
   FaIndustry,
+  FaDraftingCompass,
 } from "react-icons/fa";
 
 function Services() {
+
   const services = [
-    {
-      icon: <FaHardHat />,
-      title: "Demolition Work",
-      desc: "Safe and professional demolition services for residential and commercial projects.",
-    },
+
     {
       icon: <FaHammer />,
       title: "Core Cutting",
-      desc: "Accurate concrete core cutting with modern machines.",
+      desc: "Professional RCC core cutting for walls, slabs and concrete structures with high precision."
     },
+
     {
       icon: <FaBuilding />,
-      title: "Slab Cutting",
-      desc: "Clean slab cutting with high precision and minimum vibration.",
+      title: "Wall Cutting",
+      desc: "Accurate wall cutting for doors, windows, lift openings and structural modifications."
     },
+
+    {
+      icon: <FaIndustry />,
+      title: "RCC Demolition",
+      desc: "Safe demolition of RCC structures using modern equipment with minimum vibration."
+    },
+
     {
       icon: <FaTools />,
-      title: "Rebaring Work",
-      desc: "Professional reinforcement and rebar cutting services.",
+      title: "Slab Cutting",
+      desc: "Clean slab cutting for residential, commercial and industrial construction projects."
     },
+
     {
       icon: <FaBolt />,
       title: "Chemical Bolt Fixing",
-      desc: "Strong anchoring bolt and chemical bolt installation.",
+      desc: "Heavy-duty chemical anchor bolt fixing for machines and structural applications."
     },
+
     {
-      icon: <FaIndustry />,
+      icon: <FaDraftingCompass />,
       title: "Machine Foundation",
-      desc: "Heavy machine foundation work with quality finishing.",
-    },
+      desc: "Precision machine foundation work with proper alignment and durable finishing."
+    }
+
   ];
 
   return (
-    <section className="services" id="services">
-      <h2>Our Services</h2>
 
-      <p>
-        Professional Construction, Cutting & Demolition Services
+    <section className="services" id="services">
+
+      <span className="section-tag">
+        OUR SERVICES
+      </span>
+
+      <h2 className="section-title">
+        Professional Concrete Cutting & Demolition Services
+      </h2>
+
+      <p className="section-text">
+        We provide reliable concrete cutting, wall cutting,
+        slab cutting, demolition and industrial construction
+        solutions using advanced machines and experienced
+        professionals.
       </p>
 
       <div className="service-grid">
-        {services.map((item, index) => (
+
+        {services.map((service, index) => (
+
           <div className="service-card" key={index}>
+
             <div className="service-icon">
-              {item.icon}
+              {service.icon}
             </div>
 
-            <h3>{item.title}</h3>
+            <h3>{service.title}</h3>
 
-            <p>{item.desc}</p>
+            <p>{service.desc}</p>
+
           </div>
+
         ))}
+
       </div>
+
     </section>
+
   );
+
 }
 
 export default Services;
