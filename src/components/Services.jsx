@@ -5,6 +5,9 @@ import {
   FaBolt,
   FaIndustry,
   FaDraftingCompass,
+  FaCubes,
+  FaHardHat,
+  FaRoad,
 } from "react-icons/fa";
 
 function Services() {
@@ -14,37 +17,55 @@ function Services() {
     {
       icon: <FaHammer />,
       title: "Core Cutting",
-      desc: "Professional RCC core cutting for walls, slabs and concrete structures with high precision."
+      desc: "Precision RCC core cutting for walls, slabs, beams and concrete structures using professional equipment."
     },
 
     {
       icon: <FaBuilding />,
       title: "Wall Cutting",
-      desc: "Accurate wall cutting for doors, windows, lift openings and structural modifications."
-    },
-
-    {
-      icon: <FaIndustry />,
-      title: "RCC Demolition",
-      desc: "Safe RCC demolition using modern machines with minimum vibration and maximum safety."
+      desc: "Accurate wall cutting for doors, windows, lift openings, ventilation and structural modifications."
     },
 
     {
       icon: <FaTools />,
       title: "Slab Cutting",
-      desc: "Clean and accurate slab cutting for residential, commercial and industrial projects."
+      desc: "Clean and controlled slab cutting for residential, commercial and industrial construction projects."
+    },
+
+    {
+      icon: <FaIndustry />,
+      title: "RCC Demolition",
+      desc: "Safe RCC demolition work using modern machinery with controlled execution and minimum vibration."
+    },
+
+    {
+      icon: <FaCubes />,
+      title: "Rebaring Work",
+      desc: "Professional rebaring services for structural modifications, reinforcement and construction requirements."
+    },
+
+    {
+      icon: <FaHardHat />,
+      title: "Breaking Work",
+      desc: "Reliable concrete breaking and dismantling work for renovation, modification and demolition projects."
     },
 
     {
       icon: <FaBolt />,
       title: "Chemical Bolt Fixing",
-      desc: "Heavy-duty chemical anchor bolt fixing with high strength and durability."
+      desc: "High-strength chemical anchor bolt fixing for structural, industrial and heavy-duty applications."
     },
 
     {
       icon: <FaDraftingCompass />,
       title: "Machine Foundation",
-      desc: "Precision machine foundation work with proper alignment and quality finishing."
+      desc: "Precision machine foundation work with proper alignment, accuracy and quality finishing."
+    },
+
+    {
+      icon: <FaRoad />,
+      title: "Groove Cutting",
+      desc: "Professional groove cutting for electrical, plumbing and other construction service installations."
     }
 
   ];
@@ -62,14 +83,14 @@ function Services() {
       </h2>
 
       <p className="section-text">
-        We provide advanced concrete cutting and demolition
-        solutions with modern equipment, experienced technicians
-        and timely project completion.
+        We provide reliable concrete cutting, RCC demolition and
+        construction support services using modern equipment,
+        skilled professionals and safe working practices.
       </p>
 
       <div className="service-grid">
 
-        {services.map((service,index)=>(
+        {services.map((service, index) => (
 
           <div className="service-card" key={index}>
 

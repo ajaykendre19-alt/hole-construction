@@ -1,7 +1,5 @@
 import { useState, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import logo from "../assets/images/hole logo.png";
-
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -45,7 +43,7 @@ function Navbar() {
         <a href="#home" className="logo">
 
           <img
-            src={logo}
+            src="/logo.jpg"
             alt="Hole Construction"
             className="logo-img"
           />

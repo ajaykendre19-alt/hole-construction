@@ -1,5 +1,3 @@
-import hero from "../assets/images/hero.png";
-
 function Hero() {
   return (
     <section className="hero" id="home">
@@ -15,11 +13,11 @@ function Hero() {
         </h1>
 
         <p>
-          We provide professional Core Cutting, Wall Cutting,
-          Concrete Cutting, Slab Cutting, RCC Demolition,
-          Chemical Bolt Fixing and Machine Foundation services
-          with modern equipment, experienced technicians and
-          quality workmanship.
+          Hole Construction provides professional Core Cutting,
+          Wall Cutting, Slab Cutting, RCC Demolition, Rebaring,
+          Breaking Work, Chemical Bolt Fixing, Machine Foundation
+          and Groove Cutting services in Pune with quality workmanship
+          and reliable service.
         </p>
 
         <div className="hero-buttons">
@@ -42,8 +40,8 @@ function Hero() {
       <div className="hero-right">
 
         <img
-          src={hero}
-          alt="Core Cutting Services"
+          src="/hero.png"
+          alt="Hole Construction Core Cutting and RCC Demolition Services"
         />
 
       </div>

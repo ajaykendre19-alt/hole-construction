@@ -1,25 +1,74 @@
-import { FaStar } from "react-icons/fa";
+import {
+  FaBuilding,
+  FaMapMarkerAlt,
+  FaCalendarAlt,
+  FaCheckCircle,
+  FaClock
+} from "react-icons/fa";
 
 function Reviews() {
 
-  const reviews = [
+  const customers = [
 
     {
-      name: "Rahul Patil",
-      review:
-        "Excellent Core Cutting service. Work completed on time with professional equipment."
+      name: "Manorama Developers",
+      location: "Moshi",
+      status: "Ongoing",
+      icon: <FaClock />
     },
 
     {
-      name: "Mahesh Jadhav",
-      review:
-        "Very good quality work. Clean cutting and experienced team. Highly recommended."
+      name: "El Progreso Landmark (D.R. Ghavane)",
+      location: "Jadhav Wadi, Charoli",
+      status: "Ongoing",
+      icon: <FaClock />
     },
 
     {
-      name: "Sanjay More",
-      review:
-        "Affordable pricing and fast service. Thank you Hole Construction Team."
+      name: "Ghavane Realty / Ishanya Destination",
+      location: "Bhosari",
+      duration: "02/2025 to 06/2025",
+      status: "Completed",
+      icon: <FaCheckCircle />
+    },
+
+    {
+      name: "Soham Shrushti Developers",
+      location: "Dange Chowk",
+      duration: "04/2024 to 11/2025",
+      status: "Completed",
+      icon: <FaCheckCircle />
+    },
+
+    {
+      name: "Rama...stellar Developers",
+      location: "Punawale",
+      duration: "04/2025 to 06/2025",
+      status: "Completed",
+      icon: <FaCheckCircle />
+    },
+
+    {
+      name: "MBBD MPMT Site",
+      location: "Baner",
+      duration: "Completed in 2023",
+      status: "Completed",
+      icon: <FaCheckCircle />
+    },
+
+    {
+      name: "Kimaya Real Estate",
+      location: "Pimple Nilakh",
+      duration: "03/2024 to 02/2026",
+      status: "Completed",
+      icon: <FaCheckCircle />
+    },
+
+    {
+      name: "Kimaya One",
+      location: "Balewadi",
+      status: "Ongoing",
+      icon: <FaClock />
     }
 
   ];
@@ -29,36 +78,70 @@ function Reviews() {
     <section className="reviews" id="reviews">
 
       <span className="section-tag">
-        CUSTOMER REVIEWS
+        OUR CUSTOMERS
       </span>
 
       <h2 className="section-title">
-        What Our Clients Say
+        Trusted by Our Customers
       </h2>
 
       <p className="section-text">
-        Customer satisfaction is our highest priority.
+        We are proud to work with developers, contractors and
+        construction projects across Pune with a focus on
+        quality, safety and timely project completion.
       </p>
 
       <div className="review-grid">
 
-        {reviews.map((item,index)=>(
+        {customers.map((item, index) => (
 
           <div className="review-card" key={index}>
 
-            <div className="stars">
+            <div className="quote-icon">
+              <FaBuilding />
+            </div>
 
-              <FaStar/>
-              <FaStar/>
-              <FaStar/>
-              <FaStar/>
-              <FaStar/>
+            <h3>
+              {item.name}
+            </h3>
+
+            <div className="customer-detail">
+
+              <FaMapMarkerAlt />
+
+              <span>
+                {item.location}
+              </span>
 
             </div>
 
-            <p>"{item.review}"</p>
+            {item.duration && (
 
-            <h3>{item.name}</h3>
+              <div className="customer-detail">
+
+                <FaCalendarAlt />
+
+                <span>
+                  {item.duration}
+                </span>
+
+              </div>
+
+            )}
+
+            <div className={`project-status ${
+              item.status === "Ongoing"
+                ? "status-ongoing"
+                : "status-completed"
+            }`}>
+
+              {item.icon}
+
+              <span>
+                {item.status}
+              </span>
+
+            </div>
 
           </div>
 

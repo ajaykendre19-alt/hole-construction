@@ -1669,3 +1669,300 @@ font-size:15px;
   }
 
 }
+/* =========================
+   ABOUT SECTION - FINAL DESIGN
+   ========================= */
+
+.about {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 50px;
+  align-items: center;
+  padding: 90px 8%;
+  background: #ffffff;
+}
+
+/* LEFT SIDE */
+
+.about-left {
+  text-align: left;
+}
+
+.about-left h2 {
+  font-size: 46px;
+  line-height: 1.15;
+  color: #222;
+  margin: 20px 0;
+}
+
+.about-left p {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.section-tag {
+  display: inline-block;
+  background: #ffb400;
+  color: #111;
+  padding: 10px 22px;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+/* CHECK LIST */
+
+.about-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px 30px;
+  margin-top: 30px;
+}
+
+.about-list div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  color: #333;
+}
+
+.about-list svg {
+  color: #ffb400;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+/* RIGHT SIDE */
+
+.about-right {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* CARDS */
+
+.about-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 35px 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border: 1px solid #eeeeee;
+  transition: 0.3s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.14);
+}
+
+.about-card svg {
+  font-size: 40px;
+  color: #ffb400;
+  margin-bottom: 15px;
+}
+
+.about-card h3 {
+  font-size: 28px;
+  color: #222;
+  margin: 5px 0 8px;
+}
+
+.about-card p {
+  color: #666;
+  font-size: 15px;
+  margin: 0;
+}
+
+/* THIRD CARD */
+
+.about-card:last-child {
+  grid-column: 1 / -1;
+}
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 768px) {
+
+  .about {
+    grid-template-columns: 1fr;
+    padding: 70px 6%;
+    gap: 40px;
+  }
+
+  .about-left h2 {
+    font-size: 34px;
+  }
+
+  .about-left p {
+    font-size: 16px;
+  }
+
+  .about-list {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .about-right {
+    grid-template-columns: 1fr;
+  }
+
+  .about-card:last-child {
+    grid-column: auto;
+  }
+
+}
+.service-card:last-child {
+  grid-column: 2 / 4;
+}
+@media (max-width: 768px) {
+  .service-card:last-child {
+    grid-column: auto;
+  }
+}
+/* =================================
+   GALLERY LIGHTBOX
+================================= */
+
+.gallery-image {
+  position: relative;
+  cursor: pointer;
+}
+
+.gallery-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.gallery-overlay span {
+  background: #ffb400;
+  color: #111;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.gallery-image:hover .gallery-overlay {
+  opacity: 1;
+}
+
+
+/* LIGHTBOX */
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.92);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  animation: lightboxFade 0.25s ease;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 85vh;
+  object-fit: contain;
+  border-radius: 10px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 25px;
+  right: 30px;
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  background: #ffb400;
+  color: #111;
+  font-size: 32px;
+  line-height: 1;
+  cursor: pointer;
+  font-weight: 700;
+  z-index: 10000;
+}
+
+.lightbox-close:hover {
+  background: #ffffff;
+}
+
+.lightbox-caption {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.lightbox-caption strong {
+  font-size: 20px;
+}
+
+.lightbox-caption span {
+  color: #ffb400;
+  font-size: 14px;
+}
+
+
+@keyframes lightboxFade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+  .lightbox {
+    padding: 20px;
+  }
+
+  .lightbox img {
+    max-width: 95%;
+    max-height: 75vh;
+  }
+
+  .lightbox-close {
+    top: 15px;
+    right: 15px;
+    width: 42px;
+    height: 42px;
+    font-size: 28px;
+  }
+
+  .lightbox-caption {
+    bottom: 20px;
+  }
+
+  .lightbox-caption strong {
+    font-size: 17px;
+  }
+
+}
