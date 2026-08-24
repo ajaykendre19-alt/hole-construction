@@ -43,7 +43,7 @@ function Navbar() {
         <a href="#home" className="logo">
 
           <img
-            src="/logo.jpg"
+            src={`${import.meta.env.BASE_URL}logo.jpg`}
             alt="Hole Construction"
             className="logo-img"
           />

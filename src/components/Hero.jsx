@@ -40,7 +40,7 @@ function Hero() {
       <div className="hero-right">
 
         <img
-          src="/hero.png"
+          src={`${import.meta.env.BASE_URL}hero.png`}
           alt="Hole Construction Core Cutting and RCC Demolition Services"
         />
 
